@@ -34,6 +34,8 @@ def main():
             print("Invalid file name")
             return
         else:
+            if "test/" not in fileName:
+                fileName = "test/" + fileName
             file = open(fileName, "r")
             number = int(file.readline())
             parents = list(map(int, file.readline().split()))
