@@ -32,7 +32,7 @@ def main():
     if text[0] == "I":
         print("Enter number of nodes: ")
         number = int(input())
-        parents = numpy.array(map(int, input().split()))
+        parents = numpy.array(list(map(int, input().split())))
 
     elif text[0] == "F":
         fileName = input()
